@@ -1,0 +1,35 @@
+.content {
+  padding-top: 60px;
+
+  .tab {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    margin: 0px 90px;
+    border-bottom: 1px solid #e3e3e5;
+
+    button {
+      background: transparent;
+      border: none;
+      height: 52px;
+
+      &:nth-child(1) {
+        margin-right: 26px;
+      }
+
+      h1 {
+        color: #e3e3e5;
+        font-size: 26px;
+        cursor: pointer;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .activate h1 {
+      border-bottom: 4px solid #e3e3e5;
+    }
+  }
+}

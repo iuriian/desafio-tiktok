@@ -1,0 +1,7 @@
+<ul id="grid" class="clear">
+    <li *ngFor="let item of videos">
+        <div class="hexagon" (mouseenter)="executeVideo(item)">
+            <img src="{{ item.snippet.thumbnails.medium.url }}">
+        </div>
+    </li>
+</ul>

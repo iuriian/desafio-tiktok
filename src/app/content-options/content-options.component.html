@@ -1,0 +1,19 @@
+<div class="content">
+    <div class="tab">
+        <button type="button" (click)="selectSection('creators')" [ngClass]="{'activate': option == 'creators'}">
+            <h1>Creators</h1>
+        </button>
+        <button type="button" (click)="selectSection('discover')" [ngClass]="{'activate': option == 'discover'}">
+            <h1>Discover</h1>
+        </button>
+    </div>
+    <div [ngSwitch]="option">
+        <div *ngSwitchCase="'discover'">
+            <discover></discover>
+        </div>
+        <div *ngSwitchDefault>
+            <!-- <creators></creators> -->
+            <discover></discover>
+        </div>
+    </div>
+</div>
