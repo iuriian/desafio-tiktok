@@ -25,7 +25,7 @@ export class VideosComponent implements OnInit {
   }
 
   executeVideo(item) {
-    console.log(item);
+    // console.log(item);
     // this.youtubeService.retrieveVideo(item.id)
     //   .subscribe(res => console.log(res));
   }
