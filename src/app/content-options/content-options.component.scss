@@ -5,7 +5,8 @@
     display: flex;
     justify-content: start;
     flex-direction: row;
-    margin: 0px 90px;
+    margin: 0px auto;
+    width: 86%;
     border-bottom: 1px solid #e3e3e5;
 
     button {
@@ -30,6 +31,17 @@
 
     .activate h1 {
       border-bottom: 4px solid #e3e3e5;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .content {
+    padding-top: 30px;
+
+    .tab {
+      width: 96%;
+      margin-bottom: 6px;
     }
   }
 }

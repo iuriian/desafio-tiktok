@@ -6,9 +6,9 @@
 
   .card {
     position: relative;
-    width: 340px;
     height: auto;
-    padding: 16px;
+    width: 360px;
+    padding: 14px 30px;
     margin: 8px 0px;
     border-radius: 8px;
     border: 1px solid #040404;
@@ -34,10 +34,102 @@
           font-size: 18px;
           font-weight: 600;
           margin: 0px;
-          text-align: center;
+          text-align: left;
+          word-break: break-word;
+          white-space: normal;
         }
         small {
           font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    padding: 0 6px;
+
+    .card {
+      width: 240px;
+      padding: 16px;
+      margin: 4px 0px;
+
+      .card-content {
+        .avatar {
+          width: 60px;
+          margin-right: 16px;
+        }
+
+        span {
+          p {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0px;
+          }
+          small {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .grid {
+    padding: 0 18px;
+
+    .card {
+      width: 258px;
+      padding: 16px;
+      margin: 4px 0px;
+
+      .card-content {
+        .avatar {
+          width: 60px;
+          margin-right: 16px;
+        }
+
+        span {
+          p {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0px;
+          }
+          small {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .grid {
+    padding: 0 18px;
+
+    .card {
+      width: 360px;
+      padding: 14px 30px;
+      margin: 4px 0px;
+
+      .card-content {
+        .avatar {
+          width: 60px;
+          margin-right: 16px;
+        }
+
+        span {
+          p {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0px;
+          }
+          small {
+            font-weight: 400;
+          }
         }
       }
     }
