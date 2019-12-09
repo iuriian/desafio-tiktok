@@ -46,7 +46,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 599px) {
   .grid {
     padding: 0 6px;
 
@@ -76,12 +76,12 @@
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 600px) {
   .grid {
-    padding: 0 18px;
+    padding: 0 6px;
 
     .card {
-      width: 258px;
+      width: 43%;
       padding: 16px;
       margin: 4px 0px;
 
@@ -106,13 +106,43 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 900px) {
   .grid {
     padding: 0 18px;
 
     .card {
-      width: 360px;
-      padding: 14px 30px;
+      width: 45%;
+      padding: 16px;
+      margin: 4px 0px;
+
+      .card-content {
+        .avatar {
+          width: 60px;
+          margin-right: 16px;
+        }
+
+        span {
+          p {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0px;
+          }
+          small {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    padding: 0 18px;
+
+    .card {
+      width: 27%;
+      padding: 22px 30px;
       margin: 4px 0px;
 
       .card-content {

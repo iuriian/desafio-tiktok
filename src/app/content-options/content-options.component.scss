@@ -30,7 +30,27 @@
     }
 
     .activate h1 {
-      border-bottom: 4px solid #e3e3e5;
+      border-bottom: 4px solid #e3e3e5; 
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .content {
+    padding-top: 30px;
+
+    .tab {
+      width: 96%;
+      margin-bottom: 6px;
+
+      button {
+        height: 31px;
+        
+        h1 {
+          margin: 0;
+          font-size: 22px;
+        }
+      }
     }
   }
 }
