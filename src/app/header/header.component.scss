@@ -40,6 +40,10 @@ nav.menu-container {
     }
   }
 
+  div:not(.logo) {
+    align-self: center;
+  }
+
   .menu {
     display: flex;
     flex-direction: row;
@@ -61,6 +65,11 @@ nav.menu-container {
         &:hover {
           border-bottom: 2px solid #e3e3e5;
         }
+      }
+
+      i {
+        color: #e3e3e5;
+        font-size: 26px;
       }
     }
   }

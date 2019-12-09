@@ -12,6 +12,8 @@ import { DiscoverComponent } from './discover/discover.component';
 import { ContentOptionsComponent } from './content-options/content-options.component';
 import { environment } from 'src/environments/environment.prod';
 
+import { MatSidenavModule } from '@angular/material/sidenav';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,8 @@ import { environment } from 'src/environments/environment.prod';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatSidenavModule
   ],
   providers: [
     { provide: 'API_KEY', useValue: environment.apiKey }
