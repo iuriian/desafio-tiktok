@@ -133,6 +133,10 @@
           padding: 0;
           width: 50%;
           margin-bottom: 16px;
+
+          li {
+            font-weight: 500;
+          }
         }
       }
     }
@@ -173,6 +177,10 @@
           padding: 0;
           width: 42%;
           margin-bottom: 16px;
+
+          li {
+            font-weight: 500;
+          }
         }
       }
     }
@@ -226,7 +234,7 @@
         ul {
           list-style: none;
           margin: 0 0;
-          padding-left: 60px;
+          margin-left: 80px;
 
           li {
             font-weight: 500;
@@ -238,7 +246,7 @@
     }
 
     .wrapper {
-      margin-bottom: 60px;
+      margin-bottom: 0px;
     }
   }
 }

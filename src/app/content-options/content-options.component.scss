@@ -98,6 +98,12 @@
         }
       }
     }
+    .cards-container {
+      height: 274px;
+      padding-right: 8px;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
   }
 }
 
@@ -115,6 +121,12 @@
           border-bottom: 4px solid #e3e3e5;
         }
       }
+    }
+    .cards-container {
+      height: 280px;
+      padding-right: 4px;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
   }
 }
@@ -134,6 +146,12 @@
         }
       }
     }
+    .cards-container {
+      height: 248px;
+      padding-right: 4px;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
   }
 }
 
@@ -151,6 +169,12 @@
           border-bottom: 4px solid #e3e3e5;
         }
       }
+    }
+    .cards-container {
+      height: 286px;
+      padding-right: 4px;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
   }
 }
