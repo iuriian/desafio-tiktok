@@ -7,13 +7,16 @@
             <h1>Discover</h1>
         </button>
     </div>
-    <div [ngSwitch]="option">
+    <div [ngSwitch]="option" class="cards-container">
         <div *ngSwitchCase="'discover'">
-            <discover></discover>
+            <div class="row">
+                <div class="column" *ngFor="let discover of discovers">
+                    <card></card>
+                </div>
+            </div>
         </div>
         <div *ngSwitchDefault>
-            <!-- <creators></creators> -->
-            <discover></discover>
+            <card></card>
         </div>
     </div>
 </div>

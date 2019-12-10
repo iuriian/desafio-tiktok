@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContentOptionsComponent implements OnInit {
 
   public option: string;
+  public discovers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   constructor() { }
 
@@ -17,7 +18,6 @@ export class ContentOptionsComponent implements OnInit {
   }
 
   public selectSection(selected: string) {
-    console.log(selected);
     this.option = selected;
   }
 

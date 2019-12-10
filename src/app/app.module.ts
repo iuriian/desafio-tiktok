@@ -13,6 +13,7 @@ import { ContentOptionsComponent } from './content-options/content-options.compo
 import { environment } from 'src/environments/environment.prod';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     FooterComponent,
     CreatorsComponent,
     DiscoverComponent,
-    ContentOptionsComponent
+    ContentOptionsComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
