@@ -100,3 +100,57 @@
     }
   }
 }
+
+@media screen and (min-width: 600px) {
+  .content {
+    .tab {
+      button {
+        height: 30px;
+
+        h1 {
+          font-size: 18px;
+        }
+
+        &.activate h1 {
+          border-bottom: 4px solid #e3e3e5;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .content {
+    .tab {
+      button {
+        height: 30px;
+
+        h1 {
+          font-size: 18px;
+        }
+
+        &.activate h1 {
+          border-bottom: 4px solid #e3e3e5;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    .tab {
+      button {
+        height: 30px;
+
+        h1 {
+          font-size: 20px;
+        }
+
+        &.activate h1 {
+          border-bottom: 4px solid #e3e3e5;
+        }
+      }
+    }
+  }
+}

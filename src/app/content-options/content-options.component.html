@@ -10,13 +10,17 @@
     <div [ngSwitch]="option" class="cards-container">
         <div *ngSwitchCase="'discover'">
             <div class="row">
-                <div class="column" *ngFor="let discover of discovers">
+                <div class="column" *ngFor="let discover of discovers" @cardByCard>
                     <card></card>
                 </div>
             </div>
         </div>
         <div *ngSwitchDefault>
-            <card></card>
+            <div class="row">
+                <div class="column" *ngFor="let discover of discovers" @cardByCard>
+                    <card></card>
+                </div>
+            </div>
         </div>
     </div>
 </div>
