@@ -39,3 +39,51 @@
     }
   }
 }
+
+@media screen and (min-width: 600px) {
+  .card {
+    .card-content {
+      span {
+        p {
+          font-size: 1.8vw;
+          margin: 0 0 6% 0;
+        }
+        small {
+          font-size: 1.4vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    .card-content {
+      span {
+        p {
+          font-size: 1.2vw;
+          margin: 0 0 6% 0;
+        }
+        small {
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    .card-content {
+      span {
+        p {
+          font-size: 1.2vw;
+          margin: 0 0 6% 0;
+        }
+        small {
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+}
