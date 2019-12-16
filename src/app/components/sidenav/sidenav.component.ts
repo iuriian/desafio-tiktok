@@ -13,7 +13,7 @@ export class SidenavComponent {
   constructor() { }
 
   public closeSideNav() {
-    this.menuNavOption.emit('toogle');
+    this.menuNavOption.emit(true);
   }
 
 }

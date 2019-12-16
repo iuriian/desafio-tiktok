@@ -26,6 +26,6 @@ export class HeaderComponent {
   }
 
   public openSideNav() {
-    this.sideNavOption.emit('toogle');
+    this.sideNavOption.emit(true);
   }
 }

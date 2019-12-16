@@ -1,9 +1,9 @@
 <mat-sidenav-container>
     <mat-sidenav #sidenav mode="over" position="end" disableClose>
-        <sidenav (menuNavOption)="optionNav($event)"></sidenav>
+        <sidenav (menuNavOption)="optionNav()"></sidenav>
     </mat-sidenav>
     <mat-sidenav-content>
-        <header (sideNavOption)="optionNav($event)"></header>
+        <header (sideNavOption)="optionNav()"></header>
         <div class="container">
             <videos></videos>
             <content-options></content-options>
