@@ -12,8 +12,13 @@ import { DiscoverComponent } from './discover/discover.component';
 import { ContentOptionsComponent } from './content-options/content-options.component';
 import { environment } from 'src/environments/environment.prod';
 
-import { MatSidenavModule } from '@angular/material/sidenav';
+import {
+  MatToolbarModule,
+  MatSidenavModule
+} from '@angular/material';
+
 import { CardComponent } from './components/card/card.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +29,14 @@ import { CardComponent } from './components/card/card.component';
     CreatorsComponent,
     DiscoverComponent,
     ContentOptionsComponent,
-    CardComponent
+    CardComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    MatToolbarModule,
     MatSidenavModule
   ],
   providers: [

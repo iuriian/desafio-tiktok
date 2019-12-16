@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
 
 @Component({
@@ -10,6 +10,7 @@ export class AppComponent {
 
   title = 'desafio-tiktok';
   public isMobile: boolean;
+  @ViewChild('sidenav', { static: false }) sidenav: any;
 
   constructor(
     private breakpointObserver: BreakpointObserver
@@ -19,5 +20,9 @@ export class AppComponent {
       this.isMobile = res.matches;
     });
 
+  }
+
+  public optionNav() {
+    this.sidenav.toggle();
   }
 }

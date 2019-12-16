@@ -1,75 +1,82 @@
-nav.menu-container {
-  background: #18181b;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 22px 22px;
-  border-bottom: 1px solid #040404;
+mat-toolbar {
+  padding: 0;
+  height: 100%;
 
-  .logo {
-    width: auto;
+  nav.menu-container {
+    background: #18181b;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 22px;
+    border-bottom: 1px solid #040404;
 
-    h1 {
-      margin: 0px;
+    .logo {
+      width: auto;
 
-      a {
-        .icon {
-          height: 30px;
-          width: 28px;
+      h1 {
+        margin: 0px;
 
-          &:focus {
-            outline: none;
+        a {
+          .icon {
+            height: 30px;
+            width: 28px;
+
+            &:focus {
+              outline: none;
+            }
           }
-        }
 
-        .text {
-          width: 97px;
-          height: 22px;
-          margin-left: 4px;
+          .text {
+            width: 97px;
+            height: 22px;
+            margin-left: 4px;
 
-          &:focus {
-            outline: none;
+            &:focus {
+              outline: none;
+            }
           }
-        }
 
-        &:hover {
-          color: transparent;
-          text-decoration: none;
+          &:hover {
+            color: transparent;
+            text-decoration: none;
+          }
         }
       }
     }
-  }
 
-  div:not(.logo) {
-    align-self: center;
-  }
+    div:not(.logo) {
+      align-self: center;
+    }
 
-  .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0px;
+    .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0px;
 
-    .menu-item {
-      list-style: none;
-      padding: 0px 16px;
+      .menu-item {
+        list-style: none;
+        padding: 0px 16px;
 
-      a {
-        color: #e3e3e5;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 700;
-        cursor: pointer;
+        a {
+          color: #e3e3e5;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 500;
+          cursor: pointer;
 
-        &:hover {
-          border-bottom: 2px solid #e3e3e5;
+          &:hover {
+            border-bottom: 2px solid #e3e3e5;
+          }
         }
-      }
 
-      i {
-        color: #e3e3e5;
-        font-size: 26px;
+        i {
+          color: #e3e3e5;
+          font-size: 26px;
+          cursor: pointer;
+        }
       }
     }
   }

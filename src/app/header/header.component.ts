@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ElementRef, EventEmitter, Output } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
 
 @Component({
@@ -9,7 +9,11 @@ import { BreakpointObserver } from '@angular/cdk/layout';
 })
 export class HeaderComponent {
 
+  @ViewChild('sidenav', { static: false }) nav: ElementRef;
+
   public isMobile: boolean;
+  public openNav: boolean;
+  @Output() sideNavOption = new EventEmitter<any>();
 
   constructor(
     private breakpointObserver: BreakpointObserver
@@ -21,6 +25,7 @@ export class HeaderComponent {
 
   }
 
-  public openSideNav() { }
-
+  public openSideNav() {
+    this.sideNavOption.emit('toogle');
+  }
 }

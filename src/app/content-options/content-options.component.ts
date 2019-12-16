@@ -39,7 +39,7 @@ export class ContentOptionsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.option = 'discover';
+    this.option = 'creators';
   }
 
   public selectSection(selected: string) {

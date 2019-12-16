@@ -1,6 +1,13 @@
-<header></header>
-<div class="container">
-    <videos></videos>
-    <content-options></content-options>
-</div>
-<footer></footer>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="over" position="end" disableClose>
+        <sidenav (menuNavOption)="optionNav($event)"></sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <header (sideNavOption)="optionNav($event)"></header>
+        <div class="container">
+            <videos></videos>
+            <content-options></content-options>
+        </div>
+        <footer></footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>
