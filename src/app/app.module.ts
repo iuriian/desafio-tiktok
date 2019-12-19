@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { environment } from 'src/environments/environment.prod';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -30,9 +29,7 @@ import {
     MatSidenavModule,
     ComponentsModule
   ],
-  providers: [
-    { provide: 'API_KEY', useValue: environment.apiKey }
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
