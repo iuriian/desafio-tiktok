@@ -1,27 +1,29 @@
-# DesafioTiktok
+# Desafio Tiktok
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 8.0.3.
 
-## Development server
+## Escopo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Criar uma landing page (repensada e diferente da original) para o [TikTok](https://www.tiktok.com/trending?lang=en) e fazer deploy no [Heroku](https://www.heroku.com/)
 
-## Code scaffolding
+## Tecnologias utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular CLI 8.0.3
+- Angular Material 8.2.3
+- Angular Animations 8.0.3
+- Node 12.4.0
+- Express 4.17.1
 
-## Build
+## Como instalar
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Baixe ou clone este repositório usando git clone https://github.com/iuriian/desafio-tiktok.git
+- Navegue até o diretório onde se encontra o projeto
+- Utilize o comando `npm install` para baixar e instalar todas as dependências do projeto
 
-## Running unit tests
+## Como executar
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Utilize o comando `npm run dev` para executar o servidor de desenvolvimento.
 
-## Running end-to-end tests
+## Como é feito o deploy no Heroku
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Foi criado um pipeline no heroku que aponta para o branch master, assim os deploys são feitos automaticamente sempre que é feito um novo commit.
